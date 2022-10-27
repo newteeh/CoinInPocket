@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Монета в кармане</title>
     <link rel="stylesheet" href="/css/style.css">
+    
 </head>
 <body>
     <!--Оболочка wrapper-->
     <div class="wrapper">
+        <!--Секция header-->
         <header class="header">
             <!-- <div class="container"> -->
                 <div class="header__body">
@@ -17,10 +19,13 @@
                         <div class="container">
                             <div class="header__upperPart__body">
                                 <a href="" class="header__logo"><img src="/img/MIP__logo.png" alt=""></a>
-                                <div class="header__burger"><span></span></div>
+                                
                                 <div class="upperPart__itemsBox">
                                     <div class="header__phoneNumber"><a href="">+7 (495) 115-50-95</a></div>
                                     <div class="header__buttonBox"><button>Личный кабинет<img src="/img/personalArea_Icon.png" alt=""></button></div>
+                                    <div class="header__burgerBox">
+                                        <div class="header__burger"><span></span></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -49,7 +54,7 @@
                                                 <!-- Выпадающий список -->
                                                 <div class="itc-select__dropdown">
                                                 <ul class="itc-select__options">
-                                                    <li class="itc-select__option" data-select="option" data-value="volkswagen" data-index="0">Образец заявления <br> на получение микрозайма</li>
+                                                    <li class="itc-select__option" data-select="option" data-value="volkswagen" data-index="0"><a>Образец заявления <br> на получение микрозайма</a></li>
                                                     <li class="itc-select__option" data-select="option" data-value="ford" data-index="1">Правила предоставления <br> займов</li>
                                                     <li class="itc-select__option" data-select="option" data-value="toyota" data-index="2">Политика по персональным <br> данным</li>
                                                     <li class="itc-select__option" data-select="option" data-value="nissan" data-index="3">Свидетельство МФО</li>
@@ -72,11 +77,56 @@
                 </div>
             <!-- </div> -->
         </header>
+        <!--Секция quickTransfersSec-->
+        <div class="quickTransfersSec">
+            <div class="container">
+                <div class="quickTransfersSec__body">
+                    <div class="quickTransfersSec__backgroundContent">
+                        <img src="/img/quickTransfersSec__bgImg (1).png" alt="">
+                    </div>
+                    <div class="quickTransfersSec__menuBox">
+                        <div class="quickTransfersSec__buttonBox">
+                            <button>Быстрый</button>
+                            <button>Быстрый больше</button>
+                        </div>
+                        <div class="quickTransfersSec__bottomMenuBox">
+                            <div class="bottomMenu__leftPart">
+                                <div class="bottomMenu__leftPart__body">
+                                    <div class="bottomMenu__leftPart__firstrange">
+                                        <div class="firstrange__body">
+                                            <div class="firstrange__upperPart">
+                                                <img src="/img/money__icon.png" alt="">
+                                                <div class="upperPart__textBox">
+                                                    <div class="upperPart__title">Мне нужно</div>
+                                                    <div class="upperPart__subtitle">18 500 ₽</div>
+                                                </div>
+                                            </div>
+                                            <div class="firstrange__slide">
+                                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                            </div>
+                                        </div>
+                                        <div class="firstrange__numbers">
+                                            <div class="left__number">1 000</div>
+                                            <div class="right__number">30 000</div>  
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="bottomMenu__rightPart">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--Подключение скриптов-->
-    <link rel="stylesheet" href="/ui-components/custom-select/itc-custom-select.css">
     <script src="/ui-components/custom-select/itc-custom-select.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
     <script src="/js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="/ui-components/custom-select/itc-custom-select.css">
+
 </body>
 </html>

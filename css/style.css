@@ -42,6 +42,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     max-width: 1200px;
     margin: 0 auto;
 }
+/*Описание секции header*/
 .header{
     box-shadow: 0px 0px 2px #A6A6DA;
     border-radius: 0px;
@@ -51,17 +52,40 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .header__upperPart{
     padding: 0 0 12px 0;
-    border-bottom: 1px solid #E5E5F4;;
+    box-shadow: 0px 0px 2px #A6A6DA;
+}
+.header__upperPart::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    background-color: #FFFFFF;
+    z-index: 3;
+    box-shadow: 0px 0px 2px #A6A6DA;
 }
 .header__upperPart__body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 5;
+}
+.header__logo{
+    position: relative;
+    z-index: 5;
+}
+.header__logo img{
+    max-width: 100%;
+}
+.header__burger{
+    display: none;
 }
 .upperPart__itemsBox{
     display: flex;
     align-items: center;
-    gap: 24px;
+    
 }
 .header__phoneNumber a{
     font-family: 'IBM Plex Sans';
@@ -94,6 +118,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     box-shadow: 0px 0px 2px #A6A6DA;
     border-radius: 8px;
     gap: 8px;
+    margin: 0 0 0 24px;
 }
 .header__buttonBox button:hover{
     background: #FAFAFA;
@@ -133,4 +158,218 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .header__link:hover{
     color: #5151A8;
+}
+/*Описание секции quickTransfersSec */
+.quickTransfersSec{
+
+}
+.quickTransfersSec__body{
+    padding: 40px 0 0 0 ;
+}
+.quickTransfersSec__backgroundContent{
+    margin: 0 0 ;
+}
+.quickTransfersSec__backgroundContent img{
+    max-width: 100%;
+}
+.quickTransfersSec__titleBox{
+    position: relative;
+    margin: 34px 0 0 0 ;
+}
+.quickTransfersSec__titleBox img:nth-child(1){
+    position: absolute;
+    left: 325px;
+    top: 0px;
+}
+.quickTransfersSec__titleBox img:nth-child(3){
+    position: absolute;
+    top: 149px;
+    
+}
+.quickTransfersSec__title{
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 68px;
+    line-height: 82px;
+    color: #3F3E42;
+    padding: 0 0 0 40px;
+
+}
+.quickTransfersSec__menuBox{
+    box-shadow: 0px 40px 100px -40px rgba(166, 166, 218, 0.2);
+    filter: drop-shadow(0px 0px 2px #BCB6DA);
+    
+    
+
+}
+.quickTransfersSec__buttonBox{
+    display: flex;
+    
+}
+.quickTransfersSec__buttonBox button:nth-child(1){
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #7F7E83;
+    padding: 16px 36px;
+    border-top-left-radius: 16px;
+}
+.quickTransfersSec__buttonBox button:nth-child(1):focus{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #57B18A;
+    padding: 16px 36px;
+    background: #FFFFFF;
+    border-top-left-radius: 16px;
+}
+.quickTransfersSec__buttonBox button:nth-child(2){
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #7F7E83;
+    padding: 16px 36px;
+    border-top-right-radius: 16px;
+}
+.quickTransfersSec__buttonBox button:nth-child(2):focus{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #57B18A;
+    padding: 16px 36px;
+    background: #FFFFFF;
+    border-top-right-radius: 16px;
+}
+.quickTransfersSec__bottomMenuBox{
+    
+}
+.bottomMenu__leftPart{
+    padding: 36px;
+}
+.bottomMenu__leftPart__body{
+
+}
+.bottomMenu__leftPart__firstrange{
+
+}
+.firstrange__body{
+    
+}
+.firstrange__upperPart{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.upperPart__textBox{
+
+}
+.upperPart__title{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #3F3E42;
+}
+.upperPart__subtitle{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #7F7E83;
+}
+
+@media(max-width:1024px){
+    .header__burgerBox{
+        padding: 18px 15px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 2px #A6A6DA;
+        border-radius: 8px;
+        margin: 0 0 0 12px;
+        position: relative;
+        z-index: 5;
+    }
+    .header__burger{
+        display: block;
+        position: relative;
+        width: 18px;
+        height: 12px;
+        
+    }
+    .header__burger span{
+        position: absolute;
+        background-color: #79C1A1;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 5px;
+        transition: 0.3s ease;
+    }
+    .header__burger::before,
+    .header__burger::after{
+        content: '';
+        background-color: #79C1A1;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: 0.3s ease;
+    }
+    .header__burger::before{
+        top: 0;
+    }
+    .header__burger::after{
+        bottom: 0;
+    }
+    .header__burger.active span{
+        transform: scale(0);
+    }
+    .header__burger.active::before{
+        transform: rotate(45deg);
+        top: 5px;
+    }
+    .header__burger.active::after{
+        transform: rotate(-45deg);
+        bottom: 5px;
+    }
+    .header__menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #FFFFFF;
+        padding: 112px 0 0 0 ;
+        transition: 0.3s ease;
+
+    }
+    .header__menu.active{
+        top: 0%;
+    }
+    .header__list{
+        display: block;
+    }
+    .header__list li{
+        padding: 0 0 20px 0;
+    }
+}
+@media(max-width:768px){
+    .header__phoneNumber{
+        font-size: 16px;
+    }
 }
