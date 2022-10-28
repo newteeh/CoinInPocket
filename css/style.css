@@ -165,6 +165,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .quickTransfersSec__body{
     padding: 40px 0 0 0 ;
+    
 }
 .quickTransfersSec__backgroundContent{
     margin: 0 0 ;
@@ -199,12 +200,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .quickTransfersSec__menuBox{
     box-shadow: 0px 40px 100px -40px rgba(166, 166, 218, 0.2);
     filter: drop-shadow(0px 0px 2px #BCB6DA);
+    position: absolute;
+    top: 470px;
     
     
 
 }
 .quickTransfersSec__buttonBox{
     display: flex;
+    
     
 }
 .quickTransfersSec__buttonBox button:nth-child(1){
@@ -254,24 +258,54 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     border-top-right-radius: 16px;
 }
 .quickTransfersSec__bottomMenuBox{
+    display: flex;
     
 }
 .bottomMenu__leftPart{
     padding: 36px;
+    background-color: #FFFFFF;
+    width: 70%;
+    border-bottom-left-radius: 16px;
 }
 .bottomMenu__leftPart__body{
-
+    
+    
+}
+.bottomMenu__leftPart__body__upperPart{
+    display: flex;
+    gap: 24px;
+}
+.bottomMenu__leftPart__body__bottomPart{
+    display: flex;
+    gap: 24px ;
 }
 .bottomMenu__leftPart__firstrange{
-
+    width: 360px;
+}
+.bottomMenu__leftPart__secondrange{
+    width: 360px;
 }
 .firstrange__body{
-    
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px #A6A6DA;
+    border-radius: 8px;
+}
+.secondrange__body{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px #A6A6DA;
+    border-radius: 8px;
 }
 .firstrange__upperPart{
     display: flex;
     align-items: center;
     gap: 12px;
+    padding: 0 0 0 8px;
+}
+.secondrange__upperPart{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 0 0 8px;
 }
 .upperPart__textBox{
 
@@ -291,6 +325,248 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     font-size: 18px;
     line-height: 28px;
     color: #7F7E83;
+}
+.firstrange__slide{
+    width: 100%;
+}
+.secondrange__slide{
+    width: 100%;
+}
+.first__slider{
+    -webkit-appearance: none;  /*Переопределение стилей CSS по умолчанию*/
+    appearance: none;
+    width: 100%; /* Полная ширина */
+    height: 4px; /* Заданная высота */
+    background: #6F6FC4;
+    border-radius: 3px 3px 0px 0px;
+    outline: none; /* Удалить контур */
+    opacity: 0.7; /* Установите прозрачность (для эффектов наведения мыши при наведении курсора) */
+    -webkit-transition: .2s; /* 0.2 секундный переход при наведении курсора */
+    transition: opacity .2s;
+}
+.first__slider:hover {
+    opacity: 1; /* Полностью отображается при наведении курсора мыши */
+}
+.first__slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 24px;
+    border: 0;
+    background: url('/img/purple__slider.png');
+    cursor: pointer;
+  }
+
+  .second__slider{
+    -webkit-appearance: none;  /*Переопределение стилей CSS по умолчанию*/
+    appearance: none;
+    width: 100%; /* Полная ширина */
+    height: 4px; /* Заданная высота */
+    background: #FFA27D;
+    border-radius: 3px 3px 0px 0px;
+    outline: none; /* Удалить контур */
+    opacity: 0.7; /* Установите прозрачность (для эффектов наведения мыши при наведении курсора) */
+    -webkit-transition: .2s; /* 0.2 секундный переход при наведении курсора */
+    transition: opacity .2s;
+}
+.second__slider:hover {
+    opacity: 1; /* Полностью отображается при наведении курсора мыши */
+}
+.second__slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 24px;
+    border: 0;
+    background: url('/img/orange__slider.png');
+    cursor: pointer;
+  }
+
+  .firstrange__numbers{
+      display: flex;
+      font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #7F7E83;
+    justify-content: space-between;
+  }
+  .secondrange__numbers{
+    display: flex;
+    font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #7F7E83;
+  justify-content: space-between;
+}
+
+.bottomMenu__leftPart__FIOInput{
+    width: 360px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px #A6A6DA;
+    border-radius: 8px;
+}
+.FIOInput__body{
+    padding: 8px 16px;
+}
+.FIOtext{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #3F3E42;
+}
+.FIOInput{
+    width: 224px;
+    height: 24px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #7F7E83;
+}
+
+
+.bottomMenu__leftPart__PhoneInput{
+    width: 360px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px #A6A6DA;
+    border-radius: 8px;
+}
+.PhoneInput__body{
+    padding: 8px 16px;
+}
+.Phonetext{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #3F3E42;
+}
+.PhoneInput{
+    width: 224px;
+    height: 24px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #7F7E83;
+}
+.bottomMenu__rightPart{
+    background: #FAFAFA;
+    border-bottom-right-radius: 16px;
+}
+.bottomMenu__rightPart__body{
+    padding: 36px 36px 36px 24px;
+}
+.rightPart__upperPart{
+    display: flex;
+    gap: 24px;
+    padding: 0 0 32px 0;
+}
+.backToBackBox{
+
+}
+.backToBack__title{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #3F3E42;
+}
+.backToBack__mainPrice{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+    color: #3F3E42;
+}
+.backToBack__mainPrice span{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #7F7E83;
+}
+.backToBack__subtitle{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #7F7E83;
+
+}
+.BidBox{
+
+}
+.Bid__title{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #3F3E42;
+}
+.Bid__mainPrice{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+    color: #3F3E42;
+}
+.Bid__mainPrice span{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #7F7E83;
+}
+.Bid__subtitle{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #7F7E83;
+}
+.rightPart__bottomPart{
+
+}
+.bottomPart__buttonBox{
+
+}
+.bottomPart__buttonBox button{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    padding: 14px 85.5px 18px 85.5px;
+    background: #57B18A;
+    box-shadow: 0px 4px 0px #468F6F;
+    border-radius: 8px;
+
+/* BG/FFFFFF */
+
+color: #FFFFFF;
+}
+.bottomPart__buttonBox button:active{
+    background: #468F6F;
+    border-radius: 8px;
 }
 
 @media(max-width:1024px){
@@ -366,6 +642,49 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     }
     .header__list li{
         padding: 0 0 20px 0;
+    }
+    .bottomMenu__leftPart__firstrange{
+        width: 300px;
+    }
+    .bottomMenu__leftPart__secondrange{
+        width: 300px;
+    }
+    .bottomMenu__leftPart__FIOInput{
+        width: 300px;
+    }
+    .bottomMenu__leftPart__PhoneInput{
+        width: 300px;
+    }
+    .bottomMenu__rightPart{
+        
+    }
+    .bottomMenu__leftPart{
+        width: 65%;
+    }
+    .quickTransfersSec__menuBox{
+        top: 360px;
+        z-index: 1;
+        position: absolute;
+    }
+    .bottomPart__buttonBox button{
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        padding: 14px 57.5px 18px 57.5px;
+        background: #57B18A;
+        box-shadow: 0px 4px 0px #468F6F;
+        border-radius: 8px;
+    
+    /* BG/FFFFFF */
+    
+    color: #FFFFFF;
+    }
+    .bottomPart__buttonBox button:active{
+        background: #468F6F;
+        border-radius: 8px;
     }
 }
 @media(max-width:768px){
