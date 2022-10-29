@@ -17,18 +17,9 @@ menuBtn.addEventListener('click',function(){
 
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
-output.innerHTML = slider.value; // Отображение значения ползунка по умолчанию
+output.innerHTML = slider.value; // Display the default slider value
 
-// Обновите текущее значение ползунка (при каждом перетаскивании маркера ползунка)
+// Update the current slider value (each time you drag the slider handle)
 slider.oninput = function() {
-  output.innerHTML = this.value;
-}
-
-var slider2 = document.getElementById("myRange2");
-var output2 = document.getElementById("demo2");
-output2.innerHTML = slider2.value; // Отображение значения ползунка по умолчанию
-
-// Обновите текущее значение ползунка (при каждом перетаскивании маркера ползунка)
-slider2.oninput = function() {
-  output2.innerHTML = this.value;
+    output.innerHTML = this.value;
 }
