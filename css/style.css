@@ -38,6 +38,9 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*//*--------------------*//*--------------------*/
+.wrapper{
+    position: relative;
+}
 .container{
     max-width: 1220px;
     margin: 0 auto;
@@ -186,7 +189,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     font-family: 'IBM Plex Serif';
     font-style: normal;
     font-weight: 600;
-    font-size: 68px;
+    font-size: 50px;
     line-height: 82px;
     color: #3F3E42;
     position: relative;
@@ -216,7 +219,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     max-width: 100%;
 }
 .quickTransfersSec__bottomPart{
-
+    box-shadow: 0px 40px 100px -40px rgba(166, 166, 218, 0.2);
+    filter: drop-shadow(0px 0px 2px #BCB6DA);
+    border-radius: 16px;
+    
+    margin-top:-160px ;
+    
 }
 .quickTransfersSec__bottomPart__up{
 
@@ -269,10 +277,32 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 }
 .quickTransfersSec__bottomPart__down__menuBox{
-    padding: 36px;
+    /* padding: 36px; */
+    display: flex;
+    
+    
+   
+}
+.bottomPart__down__menuBox__body{
+    
+    display: flex;
+    
 }
 .menuBox__leftPart{
-
+    background: #FFFFFF;
+    padding: 36px 24px 36px 36px;
+    border-bottom-left-radius: 16px;
+    
+    
+    
+}
+.leftPart__up{
+    
+    display: flex;
+    gap: 24px;
+    padding: 0 0 28px 0px;
+    
+    
 }
 .firstRangeBox{
     max-width: 360px;
@@ -281,7 +311,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     background: #FFFFFF;
     box-shadow: 0px 0px 2px #A6A6DA;
     border-radius: 8px;
-    max-width: 360px;
+    
 }
 .firstRange__upperPart{
     
@@ -360,17 +390,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
-    color: #7F7E83;
-
-
-
-
-
-
-
-
-    .firstRangeBox{
-    max-width: 360px;
+    color: #7F7E83; 
+}
+.firstRangeBox{
+    width: 360px;
 }
 .firstRange{
     background: #FFFFFF;
@@ -380,8 +403,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .firstRange__upperPart{
     
-    
-    
 }
 .firstRange__upperPart__body{
     display: flex;
@@ -458,19 +479,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     color: #7F7E83;
 }
 
-
-
-
-
-
 .secondRangeBox{
-    max-width: 360px;
+    width: 360px;
 }
 .secondRange{
     background: #FFFFFF;
     box-shadow: 0px 0px 2px #A6A6DA;
     border-radius: 8px;
-    max-width: 360px;
+    width: 100%;
 }
 .secondRange__upperPart{
     
@@ -484,7 +500,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     padding: 8px 0 8px 16px;
 }
 .secondRange__textBox{
-    
+    width: 100%;
 }
 .secondRange__title{
     font-family: 'IBM Plex Sans';
@@ -540,6 +556,40 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     background: url('/img/purple__slider.png');
     cursor: pointer;
 }
+
+.slider1 {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 4px; /* Specified height */
+    background: #FFA27D;
+    border-radius: 3px 3px 0px 0px;
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+.slider1:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+.slider1::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    background: url('/img/orange__slider.png');
+    cursor: pointer;
+}
+
+.slider1::-moz-range-thumb {
+    width: 23px;
+    height: 25px;
+    border: 0;
+    background: url('/img/orange__slider.png');
+    cursor: pointer;
+}
+
 .secondRange__limitBox{
     display: flex;
     justify-content: space-between;
@@ -550,24 +600,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     font-size: 15px;
     line-height: 20px;
     color: #7F7E83;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}   
 /*Описание секции specialOfferSec */
 .specialOfferSec__title{
     font-family: 'IBM Plex Serif';
@@ -659,6 +692,191 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     background: #468F6F;
 }
 
+
+.leftPart__down{
+    display: flex;
+    gap: 24px;
+}
+.firstInputBox{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px #A6A6DA;
+    border-radius: 8px;
+    width: 360px;
+}
+.firstInput{
+
+}
+.firstInput__body{
+    padding: 8px 16px;
+}
+.firstInputTitle{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #3F3E42;
+}
+.firstInput__body input{
+    width: 100%;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #7F7E83;
+}
+.firstInput__body input::placeholder{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #7F7E83;
+}
+
+
+
+.secondInputBox{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px #A6A6DA;
+    border-radius: 8px;
+    width: 360px;
+}
+.firstInput{
+
+}
+.secondInput__body{
+    padding: 8px 16px;
+}
+.secondInputTitle{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #3F3E42;
+}
+.secondInput__body input{
+    width: 100%;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #7F7E83;
+}
+.secondInput__body input::placeholder{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #7F7E83;
+}
+
+.menuBox__rightPart{
+    background: #FAFAFA;
+    border-radius: 0px 16px 16px 0px;
+}
+.menuBox__rightPart__body{
+    padding: 36px 36px 36px 24px;
+}
+.menuBox__rightPart__upperPart{
+    display: flex;
+    width: 100%;
+    gap: 24px;
+    
+}
+.toReturn{
+
+}
+.toReturn__title{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #3F3E42;
+
+}
+.toReturn__num{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+    color: #3F3E42;
+}
+.toReturn__num span{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #7F7E83;
+}
+.toReturn__subtitle{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #7F7E83;
+}
+.Bid{
+
+}
+.Bid__title{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #3F3E42;
+}
+.Bid__num{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+    color: #3F3E42;
+}
+.Bid__num span{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #7F7E83;
+}
+.Bid__subtitle{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #7F7E83;
+}
+
+.menuBox__rightPart__bottomPart{
+    padding: 32px 0 0 0 ;
+}
+.menuBox__rightPart__buttonBox button{
+    background: #57B18A;
+    box-shadow: 0px 4px 0px #468F6F;
+    border-radius: 8px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    padding:14px 85.5px 18px 85.5px ;
+}
+
 @media(max-width:1024px){
     .header__burgerBox{
         padding: 18px 15px;
@@ -734,10 +952,30 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     .header__list li{
         padding: 0 0 20px 0;
     }
-    
+    .firstRangeBox{
+        width: 300px;
+    }
+    .secondRangeBox{
+        width: 300px;
+    }
+    .firstInputBox{
+        width: 300px;
+    }
+    .secondInputBox{
+        max-width: 300px;
+    }
+    .menuBox__rightPart__upperPart{
+        gap: 20px;
+    }
+    .quickTransfersSec__bottomPart{
+        width: 940px;
+    }
 }
 @media(max-width:768px){
     .header__phoneNumber{
         font-size: 16px;
+    }
+    .quickTransfersSec__bottomPart{
+        width: 768px;
     }
 }
