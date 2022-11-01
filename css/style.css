@@ -169,7 +169,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 
 .specialOfferSec{
-    margin: 260px 0 0 0 ;
+    margin: 100px 0 0 0 ;
 }
 .quickTransfersSec__body{
 
@@ -633,7 +633,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .card__body{
     padding: 24px 24px 0 24px;
 }
-.specialOfferSec__card__title{
+.specialOfferSec__card__title_1,
+.specialOfferSec__card__title_2,
+.specialOfferSec__card__title_3{
     text-align: center;
     font-family: 'IBM Plex Sans';
     font-style: normal;
@@ -643,6 +645,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     color: #3F3E42;
     margin: 0 0 12px 0;
 }
+
 .cardBox__bottomPart{
     margin: 24px 0 0 0 ;
     
@@ -877,6 +880,218 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     padding:14px 85.5px 18px 85.5px ;
 }
 
+
+/*Описание секции howItWorkSec*/
+.howItWorkSec{
+    margin: 100px 0 0 0 ;
+}
+.howItWorkSec__body{
+
+}
+.howItWorkSec__title{
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 52px;
+    color: #3F3E42;
+    padding: 0 0 32px 0;
+}
+.howItWorkSec__cardBox{
+    display: flex;
+    justify-content: space-between;
+}
+.howItWorkSec__card{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px #A6A6DA;
+    border-radius: 16px;
+    width: 360px;
+}
+.howItWorkSec__cardBody{
+    padding: 24px;
+}
+.cardBody__up{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 20px 0;
+}
+.cardNum1{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    color: #6F6FC4;
+    display: flex;
+    
+}
+.cardNum2{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    color: #57B18A;
+    display: flex;
+}
+.cardNum3{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    color: #FFA27D;
+
+    display: flex;
+}
+.cardBody__title{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #3F3E42;
+    padding: 0 0 20px 0;
+}
+.cardBody__button button{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #57B18A;
+    padding: 10px 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px #A6A6DA;
+    border-radius: 8px;
+}
+.ConsultationSec{
+    margin: 100px 0 0 0 ;
+    background-image: url(/img/ConsultationSec__bg.png);
+}
+.ConsultationSec__body{
+    padding: 70px 0 78px 0 ;
+}
+.ConsultationSec__title{
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 52px;
+    color: #3F3E42;
+    padding: 0 0 20px 0;
+}
+.ConsultationSec__text{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #57585F;
+}
+/*Описание секции BenefitsSec*/
+.BenefitsSec{
+    margin: 100px 0 0 0 ;
+    
+}
+.Benefits__body{
+
+}
+.Benefits__title{
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 52px;
+    color: #3F3E42;
+    padding: 0 0 32px 36px ;
+}
+.Benefits__body__upperPart{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px #A6A6DA;
+    border-radius: 16px;
+}
+.Benefits__body__upperPart__cardBox{
+    padding: 36px 60px 36px 36px;
+    display: flex;
+}
+.upperPart__cardBox__card:nth-child(4){
+    border: none;
+}
+.upperPart__cardBox__card{
+    margin: 0 24px 0 0 ;
+    border-right: 1px solid #E5E5F4;
+}
+.card__text1{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #3F3E42;
+    width: 240px;
+    padding: 24px 23px 0 0 ;
+}
+.card__text2{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #3F3E42;
+    width: 240px;
+    padding: 52px 0px 0 0 ;
+}
+.Benefits__body__bottomPart{
+    margin: 24px 0 0 0 ;
+    background: url(/img/Benefits__bg.png) no-repeat;
+}
+.Benefits__body__bottomPart__body{
+    padding: 52px 0;
+}
+.Benefits__body__bottomPart__title{
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 52px;
+    text-align: center;
+    color: #5151A8;
+    padding: 0 0 42px 0;
+    
+}
+.Benefits__body__bottomPart__counterBox{
+    width: 357px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.Benefits__body__bottomPart__counterBox span{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 82px;
+    color: #57B18A;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px #A6A6DA;
+    border-radius: 4px;
+    
+}
+.Benefits__body__bottomPart__subtitle{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #5151A8;
+    padding: 24px 0 0 0;
+}
+.Benefits__body__bottomPart__counterBox p{
+    padding: 4px 12px;
+}
 @media(max-width:1024px){
     .header__burgerBox{
         padding: 18px 15px;
@@ -970,7 +1185,20 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     .quickTransfersSec__bottomPart{
         width: 940px;
     }
-}
+    .specialOfferSec__card{
+        width: 300px;
+    }
+    .specialOfferSec__card__img img{
+        width: 260px;
+        
+    }
+    .specialOfferSec__card__title_1{
+        margin: 0 0 44px 0;
+    }
+    .howItWorkSec__card{
+        width: 300px;
+    }
+
 @media(max-width:768px){
     .header__phoneNumber{
         font-size: 16px;

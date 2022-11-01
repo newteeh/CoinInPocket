@@ -32,3 +32,7 @@ output.innerHTML = slider.value; // Display the default slider value
 slider1.oninput = function() {
     output1.innerHTML = this.value;
 }
+
+
+
+
