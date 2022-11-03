@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
-    
+    <script src="https://code.jquery.com/jquery-3.5.0.js" defer></script>
+    <script src="/ui-components-master/custom-select/itc-custom-select.js"defer></script>
+    <script src="/slick/slick.min.js"defer></script>
+    <script src="/js/slider.js" defer></script>
+    <script src="/js/script.js"defer></script>
+    <link rel="stylesheet" href="/ui-components-master/custom-select/itc-custom-select.css">
 </head>
 <body>
     <!--Оболочка wrapper-->
@@ -341,61 +346,87 @@
         <!--Секция ReviewsSec-->
         <div class="ReviewsSec">
             <div class="container">
-                <div class="ReviewsSec__body">
-                    <div class="ReviewsSec__upperPart">
-                        <div class="ReviewsSec__title">Отзывы</div>
-                        <div class="ReviewsSec__buttonsBox">
-                            <button class="ReviewsSec__leftBtn"><img src="/img/leftArrow.png" alt=""></button>
-                            <button class="ReviewsSec__rightBtn"><img src="/img/rightArrow.png" alt=""></button>
+                <div class="Reviews__body">
+                    <div class="Reviews__upperPart">
+                        <div class="Reviews__title">
+                            Отзывы
+                        </div>
+                        <div class="Reviews__buttonBox">
+                            <button type = "button" class = "Reviews__button-prev"><img src="/img/leftArrow.png" alt=""></button>
+                            <button type = "button" class = "Reviews__button-next"><img src="/img/rightArrow.png" alt=""></button>
                         </div>
                     </div>
-                    <div class="ReviewsSec__bottomPart">
-                        <div class="ReviewsSec__slider slider single-item">
-                            <div class="ReviewsSec__slider__card slider__item">
-                                <div class="slider__card__body">
-                                    <div class="slider__card__title">Евгений</div>
-                                    <div class="slider__card__title__text">Спасибо за удобный сервис.<br>Вы мне помогли, когда весеннее наводнение оставило меня и мою семью без жилья и денег.</div>
-                                    <div class="slider__card__date">18.02.2022</div>
+                    <div class="Reviews__bottonPart">
+                        <div class="Reviews__slider slider multiple-items">
+                            <div class="Reviews__sliderCard slider__item">
+                                <div class="Reviews__sliderCard__body">
+                                    <div class="Reviews__sliderCard__title">
+                                        Евгений
+                                    </div>
+                                    <div class="Reviews__sliderCard__text">
+                                        Спасибо за удобный сервис.<br>Вы мне помогли, когда весеннее наводнение оставило меня и мою семью без жилья и денег.
+                                    </div>
+                                    <div class="Reviews__sliderCard__date">18.02.2022</div>
                                 </div>
                             </div>
 
-                            <div class="ReviewsSec__slider__card slider__item">
-                                <div class="slider__card__body">
-                                    <div class="slider__card__title">Евгений</div>
-                                    <div class="slider__card__title__text">Спасибо за удобный сервис.<br>Вы мне помогли, когда весеннее наводнение оставило меня и мою семью без жилья и денег.</div>
-                                    <div class="slider__card__date">18.02.2022</div>
+                            <div class="Reviews__sliderCard slider__item">
+                                <div class="Reviews__sliderCard__body">
+                                    <div class="Reviews__sliderCard__title">
+                                        Евгений
+                                    </div>
+                                    <div class="Reviews__sliderCard__text">
+                                        Спасибо за удобный сервис.<br>Вы мне помогли, когда весеннее наводнение оставило меня и мою семью без жилья и денег.
+                                    </div>
+                                    <div class="Reviews__sliderCard__date">18.02.2022</div>
                                 </div>
                             </div>
 
-                            <div class="ReviewsSec__slider__card slider__item">
-                                <div class="slider__card__body">
-                                    <div class="slider__card__title">Евгений</div>
-                                    <div class="slider__card__title__text">Спасибо за удобный сервис.<br>Вы мне помогли, когда весеннее наводнение оставило меня и мою семью без жилья и денег.</div>
-                                    <div class="slider__card__date">18.02.2022</div>
+                            <div class="Reviews__sliderCard slider__item">
+                                <div class="Reviews__sliderCard__body">
+                                    <div class="Reviews__sliderCard__title">
+                                        Евгений
+                                    </div>
+                                    <div class="Reviews__sliderCard__text">
+                                        Спасибо за удобный сервис.<br>Вы мне помогли, когда весеннее наводнение оставило меня и мою семью без жилья и денег.
+                                    </div>
+                                    <div class="Reviews__sliderCard__date">18.02.2022</div>
                                 </div>
                             </div>
 
-                            <div class="ReviewsSec__slider__card slider__item">
-                                <div class="slider__card__body">
-                                    <div class="slider__card__title">Евгений</div>
-                                    <div class="slider__card__title__text">Спасибо за удобный сервис.<br>Вы мне помогли, когда весеннее наводнение оставило меня и мою семью без жилья и денег.</div>
-                                    <div class="slider__card__date">18.02.2022</div>
+                            <div class="Reviews__sliderCard slider__item">
+                                <div class="Reviews__sliderCard__body">
+                                    <div class="Reviews__sliderCard__title">
+                                        Евгений
+                                    </div>
+                                    <div class="Reviews__sliderCard__text">
+                                        Спасибо за удобный сервис.<br>Вы мне помогли, когда весеннее наводнение оставило меня и мою семью без жилья и денег.
+                                    </div>
+                                    <div class="Reviews__sliderCard__date">18.02.2022</div>
                                 </div>
                             </div>
 
-                            <div class="ReviewsSec__slider__card slider__item">
-                                <div class="slider__card__body">
-                                    <div class="slider__card__title">Евгений</div>
-                                    <div class="slider__card__title__text">Спасибо за удобный сервис.<br>Вы мне помогли, когда весеннее наводнение оставило меня и мою семью без жилья и денег.</div>
-                                    <div class="slider__card__date">18.02.2022</div>
+                            <div class="Reviews__sliderCard slider__item">
+                                <div class="Reviews__sliderCard__body">
+                                    <div class="Reviews__sliderCard__title">
+                                        Евгений
+                                    </div>
+                                    <div class="Reviews__sliderCard__text">
+                                        Спасибо за удобный сервис.<br>Вы мне помогли, когда весеннее наводнение оставило меня и мою семью без жилья и денег.
+                                    </div>
+                                    <div class="Reviews__sliderCard__date">18.02.2022</div>
                                 </div>
                             </div>
 
-                            <div class="ReviewsSec__slider__card slider__item">
-                                <div class="slider__card__body">
-                                    <div class="slider__card__title">Евгений</div>
-                                    <div class="slider__card__title__text">Спасибо за удобный сервис.<br>Вы мне помогли, когда весеннее наводнение оставило меня и мою семью без жилья и денег.</div>
-                                    <div class="slider__card__date">18.02.2022</div>
+                            <div class="Reviews__sliderCard slider__item">
+                                <div class="Reviews__sliderCard__body">
+                                    <div class="Reviews__sliderCard__title">
+                                        Евгений
+                                    </div>
+                                    <div class="Reviews__sliderCard__text">
+                                        Спасибо за удобный сервис.<br>Вы мне помогли, когда весеннее наводнение оставило меня и мою семью без жилья и денег.
+                                    </div>
+                                    <div class="Reviews__sliderCard__date">18.02.2022</div>
                                 </div>
                             </div>
                         </div>
@@ -403,13 +434,25 @@
                 </div>
             </div>
         </div>
+        <div class="requirementsForClientsSec">
+            <div class="container">
+                <div class="requirementsForClientsSec__body">
+                    <div class="requirementsForClientsSec__title">Требования к клиентам</div>
+                    <div class="requirementsForClientsSec__bottomPart">
+                        <div class="requirementsForClientsSec__up">
+                            <div class="requirementsForClientsSec__card">
+                                <div class="requirementsForClientsSec__cardBody">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="requirementsForClientsSec__down"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--Подключение скриптов-->
-    <script src="/slick/slick.min.js"></script>
-    <script src="/ui-components-master/custom-select/itc-custom-select.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script src="/js/script.js"></script>
-    <link rel="stylesheet" href="/ui-components-master/custom-select/itc-custom-select.css">
-
+    
 </body>
 </html>

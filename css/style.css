@@ -992,7 +992,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 /*Описание секции BenefitsSec*/
 .BenefitsSec{
-    margin: 100px 0 0 0 ;
+    margin: 100px 0 100px 0 ;
     
 }
 .Benefits__body{
@@ -1146,9 +1146,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 }
 .ReviewsSec__slider{
-
+    display: flex;
+    gap: 16px;
 }
-.ReviewsSec__slider__card{
+.Reviews__sliderCard{
     background: #FFFFFF;
     box-shadow: 0px 0px 2px #A6A6DA;
     border-radius: 16px;
@@ -1185,6 +1186,176 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     line-height: 20px;
     color: #7F7E83;
 }
+.Reviews__buttonBox{
+    
+}
+.Reviews__upperPart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Reviews__title{
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 52px;
+    color: #3F3E42;
+}
+
+.Reviews__button-prev{
+    background: #57B18A;
+    box-shadow: 0px 4px 0px #468F6F;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+.Reviews__button-next{
+    background: #57B18A;
+    box-shadow: 0px 4px 0px #468F6F;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+/* Слайдер */
+.slick-slider{
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+
+/* Слайд */
+.slick-slide{}
+/* Слайд активный */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+
+/* Точки */
+.slick-dots{}
+.slick-dots li{}
+.slick-dots button{}
+
+/* Конкретный слайдер */
+.slider {
+	position: relative;
+	display: flex;
+    
+}
+
+@media (max-width:767px){
+	.slider {
+		padding: 0px 40px;
+	}
+}
+
+.slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	margin: -30px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 30px;
+	height: 60px;
+}
+.slider .slick-arrow.slick-prev{
+	left: 0;
+	background: url('../img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next{
+	right: 0;
+	background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+
+.slider .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider .slick-dots li{
+	list-style: none;
+	margin: 0px 10px;
+}
+.slider .slick-dots button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button{
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+
+.slider__item {
+	/* padding: 0px 15px; */
+}
+.slider__item img{
+	max-width: 100%;
+}
+.slider__item.slick-center{
+	
+}
+
+.Reviews__sliderCard{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px #A6A6DA;
+    border-radius: 16px;
+    width: 360px;
+}
+.Reviews__sliderCard__body{
+    padding: 24px;
+    width: 312px;
+    margin: 0;
+}
+.Reviews__sliderCard__title{
+    font-size: 20px;
+    line-height: 28px;
+    color: #3F3E42;
+}
+.slick-slide{
+    width: 360px;
+}  
+.Reviews__sliderCard .slider__item{
+    width: 360px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
