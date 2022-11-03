@@ -1342,27 +1342,44 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.requirementsForClientsSec{
+    margin: 100px 0 0 0 ;
+}
+.requirementsForClientsSec__up{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.requirementsForClientsSec__title{
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 52px;
+    color: #3F3E42;
+    padding: 0 0 32px 0;
+}
+.requirementsForClientsSec__card{
+    width: 552px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px #A6A6DA;
+    border-radius: 16px;
+}
+.requirementsForClientsSec__cardBody{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px 24px 24px 20px;
+}
+.requirementsForClientsSec__cardBody p{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #57585F;
+    width: 428px;
+}
 @media(max-width:1024px){
     .header__burgerBox{
         padding: 18px 15px;
