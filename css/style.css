@@ -1380,6 +1380,205 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     color: #57585F;
     width: 428px;
 }
+.requirementsForClientsSec__down{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px #A6A6DA;
+    border-radius: 16px;
+    max-width: 1128px;
+    margin: 24px 0 0 0;
+}
+.requirementsForClientsSec__down__body{
+    padding: 24px;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+.requirementsForClientsSec__leftPart{
+    display: flex;
+    gap: 16px;
+}
+.requirementsForClientsSec__leftPart p{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #3F3E42;
+}
+.requirementsForClientsSec__rightPart p{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #57585F;
+    max-width: 816px;
+}
+.questionsSec{
+    background: url(/img/questionsSec__bg.png);
+    margin: 100px 0 0 0 ;
+}
+.questionsSec__body{
+    padding: 70px 0 78px 0;
+}
+.questionsSec__title{
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 52px;
+    color: #3F3E42;
+    padding: 0 0 20px 0;
+}
+.questionsSec__text{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #57585F;
+}
+.footer{
+    margin: 60px 0 0 0;
+}
+.footer__upperPart{
+    padding:  0 0 40px 0;
+    border-bottom: 1px solid #E5E5F4;;
+}
+.footer__upperPart__body{
+    display: flex;
+    gap: 130px;
+}
+.footer__upperPart__left{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #3F3E42;
+}
+.footer__upperPart__left img{
+    padding: 0 0 28px 0;
+}
+.footer__phone{
+    padding: 0 0 12px 0;
+}
+.footer__email{
+    padding: 0 0 28px 0;
+}
+.footer__buttonBox button{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #57B18A;
+    padding: 9px 24px 11px 24px;
+    background: #FFFFFF;
+    /* DP Stroke */
+    box-shadow: 0px 0px 2px #A6A6DA;
+    border-radius: 8px;
+}
+.footer__upperPart__right{
+
+}
+.footer__listBox{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #3F3E42;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer__list:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    
+    padding: 0 91px 0 0;
+}
+.footer__list:nth-child(2){
+    width: 264px;
+    padding: 0 24px 0 0;
+}
+.footer__link{
+
+}
+.footer__midPart{
+    padding: 40px 0 0 0 ;
+}
+.footer__midPart__body{
+    display: flex;
+    gap: 24px;
+    padding: 0 0 40px;
+    border-bottom: 1px solid #E5E5F4;
+}
+.footer__midPart__left{
+
+}
+.footer__midPart__left__title{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #3F3E42;
+}
+.footer__midPart__left__link a{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #3F3E42;
+}
+.footer__midPart__left__link_1 a{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #3F3E42;
+}
+.footer__midPart__left__link:nth-child(2){
+    padding: 0 0 32px 0;
+}
+.footer__midPart__right{
+
+}
+.footer__midPart__right__title{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #3F3E42;
+    padding: 0 0 32px 0;
+}
+.footer__midPart__right a:nth-child(2){}
+
+.footer__downPart__title{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+
+    color: #7F7E83;
+}
 @media(max-width:1024px){
     .header__burgerBox{
         padding: 18px 15px;
