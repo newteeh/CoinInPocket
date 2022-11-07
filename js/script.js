@@ -80,6 +80,29 @@ $(document).ready(function($) {
 });
 
 
+let InputBox = document.querySelector('.firstInputBox');
+let Input = document.querySelector('.firstInput__body > form > input');
+
+Input.onfocus = function(){
+    InputBox.classList.add('active');
+};
+Input.onblur = function(){
+    InputBox.classList.remove('active');
+};
+
+let InputBox2 = document.querySelector('.secondInputBox');
+let Input2 = document.querySelector('.secondInput__body > form > input');
+
+Input2.onfocus = function(){
+    InputBox2.classList.add('active');
+};
+Input2.onblur = function(){
+    InputBox2.classList.remove('active');
+};
+
+
+
+
 
 
 

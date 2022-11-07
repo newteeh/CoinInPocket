@@ -706,6 +706,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     border-radius: 8px;
     width: 360px;
 }
+.firstInputBox.active{
+    border: 2px solid #57B18A;
+}
+.secondInputBox.active{
+    border: 2px solid #57B18A;
+}
 .firstInput{
 
 }
@@ -1569,6 +1575,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     padding: 0 0 32px 0;
 }
 .footer__midPart__right a:nth-child(2){}
+.footer__downPart__body{
+    padding: 20px 0 28px 0 ;
+    display: flex;
+    justify-content: space-between;
+}
 
 .footer__downPart__title{
     font-family: 'IBM Plex Sans';
@@ -1578,6 +1589,24 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     line-height: 20px;
 
     color: #7F7E83;
+}
+.footer__downPart__info{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #7F7E83;
+}
+.footer__downPart__autor{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: right;
+    color: #7F7E83;
+
 }
 @media(max-width:1024px){
     .header__burgerBox{
@@ -1663,6 +1692,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     .firstInputBox{
         width: 300px;
     }
+    .firstInputBox.active{
+        border: 2px solid #57B18A;
+    }
     .secondInputBox{
         max-width: 300px;
     }
@@ -1685,12 +1717,26 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     .howItWorkSec__card{
         width: 300px;
     }
-
+    .requirementsForClientsSec__up{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .requirementsForClientsSec__card{
+        width: 460px;
+    }
+    .requirementsForClientsSec__down{
+        width: 940px;
+    }
+}
 @media(max-width:768px){
     .header__phoneNumber{
         font-size: 16px;
     }
     .quickTransfersSec__bottomPart{
         width: 768px;
+    }
+    .bottomPart__down__menuBox__body{
+        display: flex;
+        flex-direction: column;
     }
 }
