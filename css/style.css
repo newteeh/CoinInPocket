@@ -281,6 +281,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     display: flex;
     
     
+    
    
 }
 .bottomPart__down__menuBox__body{
@@ -1017,6 +1018,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     background: #FFFFFF;
     box-shadow: 0px 0px 2px #A6A6DA;
     border-radius: 16px;
+    max-width: 100%;
 }
 .Benefits__body__upperPart__cardBox{
     padding: 36px 60px 36px 36px;
@@ -1026,8 +1028,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     border: none;
 }
 .upperPart__cardBox__card{
-    margin: 0 24px 0 0 ;
+    padding: 0 24px 0 24px ;
     border-right: 1px solid #E5E5F4;
+}
+.upperPart__cardBox__card:nth-child(1){
+    padding: 0 24px 0 0;
 }
 .card__text1{
     font-family: 'IBM Plex Sans';
@@ -1734,9 +1739,74 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     }
     .quickTransfersSec__bottomPart{
         width: 768px;
+        padding: 250px 0 0 0;
     }
     .bottomPart__down__menuBox__body{
         display: flex;
         flex-direction: column;
+    }
+    .Benefits__body__upperPart__cardBox{
+        display: flex;
+        flex-direction: column;
+    }
+    .cardBox__upperPart{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-around;
+        
+    }
+    .requirementsForClientsSec__down{
+        max-width: 768px;
+    }
+    .footer__upperPart__body{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .quickTransfersSec__upperPart__right{
+        display: none;
+    }
+    .quickTransfersSec__bottomPart__down__menuBox{
+        display: block;
+    }
+    .specialOfferSec__card:nth-child(3){
+        display: none;
+    }
+    .howItWorkSec__card{
+        
+    }
+    .ConsultationSec__title{
+        text-align: center;
+    }
+    .ConsultationSec__text{
+        text-align: center;
+    }
+    .upperPart__cardBox__card:nth-child(1){
+        padding: 0 0 0 24px ;
+    }
+    .Benefits__body__upperPart__cardBox{
+        
+    }
+    .upperPart__cardBox__card{
+        border: none;
+        padding: 0 0 30px 24px;
+    }
+    .questionsSec__title{
+        text-align: center;
+    }
+    .questionsSec__text{
+        text-align: center;
+    }
+    .requirementsForClientsSec__cardBody{
+        flex-direction: column;
+        align-items: center;
+    }
+    .requirementsForClientsSec__cardBody p{
+        text-align: center;
+    }
+    .requirementsForClientsSec__up{
+        flex-direction: column;
+        align-items: center;
     }
 }
